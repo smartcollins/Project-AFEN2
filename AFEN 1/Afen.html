@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Afen</title>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sofia&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="Afen.css">
+</head>
+<body> 
+		<nav class="container-nav">
+			<img class="logo" src="../images/logo">
+			<div class="container-nav-sub">
+				<input type="text" name="nav-search" placeholder="Search">
+				<button class="hamburger" id="hamburger">
+					<i class="ph-list-fill"></i>
+				</button>
+			</div>
+			<ul class="nav-ul" id="nav-ul">
+				<li><a href="#">Afen</a></li>
+				<li><a href="#">Marketplace</a></li>
+				<li><a href="#">Staking</a></li>
+				<div  class="dropdown" id="dropdown">
+					<button class="dropdown-btn">Resources
+						<i class="ph-caret-down-fill"></i>
+						<div class="dropdown-menu">
+							<a href="#">Join Community</a>
+							<a href="#">Partners</a>
+							<a href="#">Medium</a>
+							<a href="#">
+								<i class="ph-twitter-logo-fill"></i>
+								<i class="ph-facebook-logo-fill"></i>
+								<i class="ph-instagram-logo-fill"></i>
+								<i class="ph-linkedin-logo-fill"></i>
+								<i class="ph-github-logo-fill"></i>
+							</a>
+						</div>
+					</button>
+				</div>
+				<li><a href="#">Profile</a></li>
+				<li><i onclick="dark()" class="ph-sun"></i></li>
+				<li><a href="#"><button class="btn-create">Create Item</button></a></li>
+				<li><a href="#"><button class="btn-connect">Connect Wallet</button></a></li>
+			</ul>
+		</nav>
+		<div class="section">
+			<div class="section-text">
+				<h1>Explore, buy and sell spectacular NFTs in the <span>Marketplace</span></h1>
+				<!-- <img src="back.afen.png"> -->
+				<button class="text-btn1">Stake</button>
+				<button class="text-btn2">Create</button>
+			</div>
+		</div>
+		<div class="row">
+			<h1 class="note">Notable  Drops</h1>
+				<div class="col-1-of-3">
+					<div class="card">
+						<img class="vector" src="../images/Vector.png">
+						<div class="abt">
+							<p>Colllectibles</p>
+						</div>
+					  <img src="../images/card-img3.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd.png">
+					    </div>
+					    <div class="rd-mid">
+							<h4>Dwayne Johnson</h4>
+							<h3>Afen Bot_#004</h3>	
+					    </div>
+					    <p class="rd-end">0.2BNB</p>
+						<div class="rd-end">
+					    	<h4>$56.98</h4>
+					    	<h4>3215</h4>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-1-of-3">
+					<div class="card">
+						<img class="vector" src="../images/Vector.png">
+						<div class="abt">
+							<p>Arts</p>
+						</div>
+					  <img src="../images/card-img2.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd2.png">
+					    </div>
+					    <div class="rd-mid">
+					    	<h4>Alisha Welson</h4>
+							<h3>Harry poter</h3>
+					    </div>
+					    <p class="rd-end">2BNB</p>
+					    <div class="rd-end">
+					    	<h4>$1256.98</h4>
+					    	<h4>215</h4>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-1-of-3">
+					<div class="card">
+						<img class="vector" src="../images/Vector.png">
+					  <div class="abt">
+					  	<p>Arts</p>
+					  </div>
+					  <img src="../images/card-img.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd3.png">
+					    </div>
+					    <div class="rd-mid">
+					    	<h4>Jeon don</h4>
+					    	<h3>Harry potter</h3>
+					    </div>
+					    <p class="rd-end">0.3BNB</p>
+					    <div class="rd-end">
+					    	<h4>Architect & Engineer</h4>
+					    	<h4>3215</h4>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="note">Live <span>Auction</span></h1>
+				<div class="col-1-of-4">
+					<div class="card">
+						<div class="abt">
+							<p>Collectibles</p>
+						</div>
+					  <img src="../images/auction.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd2.png">
+					    </div>
+					    <div class="rd-mid">
+							<h3>Harry poter</h3>
+					    </div>
+					    <div class="rd-end">
+							<h4>Current Bid</h4>
+					    	<h4>Time left</h4>
+					    </div>
+					    <div class="rd-end">
+							<h4>1.03 BNB</h4>
+					    	<h4><span>Expired</span></h4>
+					    </div>
+
+					  </div>
+					  <div class="rd-footer">
+					     <p>Bid</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-1-of-4">
+					<div class="card">
+						<div class="abt">
+							<p>Arts</p>
+						</div>
+					  <img src="../images/auction2.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd2.png">
+					    </div>
+					    <div class="rd-mid">
+							<h3>Harry poter</h3>
+					    </div>
+					    <div class="rd-end">
+					    	<h4>2900 Afen</h4>
+					    	<h4>00:00:04</h4>
+					    </div>
+					    <div class="rd-end">
+					    	<h4>2900 Afen</h4>
+					    	<h4>00:00:04</h4>
+					    </div>
+					  </div>
+					  <div class="rd-footer">
+					     <p>Bid</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-1-of-4">
+					<div class="card">
+						<div class="abt">
+							<p>Arts</p>
+						</div>
+					  <img src="../images/auction3.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd2.png">
+					    </div>
+					    <div class="rd-mid">
+							<h3>Harry poter</h3>
+					    </div>
+					    <div class="rd-end">
+					    	<h4>Current Bid</h4>
+					    	<h4>Time left</h4>
+					    </div>
+					    <div class="rd-end">
+					    	<h4>2900 Afen</h4>
+					    	<h4>00:00:04</h4>
+					    </div>
+					  </div>
+					  <div class="rd-footer">
+					     <p>Bid</p>
+					  </div>
+					</div>
+				</div>
+				<div class="col-1-of-4">
+					<div class="card">
+						<div class="abt">
+							<p>Collectibles</p>
+						</div>
+					  <img src="../images/auction4.png" alt="Avatar">
+					  <div class="container">
+					    <div class="rd-head">
+					    	<img class="rd" src="../images/img-rd2.png">
+					    </div>
+					    <div class="rd-mid">
+							<h3>Harry poter</h3>
+					    </div>
+					    <div class="rd-end">
+					    	<h4>Current Bid</h4>
+					    	<h4>Time left</h4>
+					    </div>
+					    <div class="rd-end">
+					    	<h4>1.03 BNB</h4>
+					    	<h4><span>Expired</span></h4>   
+					    </div>
+					  </div>
+					  <div class="rd-footer">
+					     <p>Bid</p>
+					  </div>
+					</div>
+				</div>
+			</div>
+	<script type="text/javascript" src="Afen.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/index.min.js"></script> 
+</body>
+</html>
