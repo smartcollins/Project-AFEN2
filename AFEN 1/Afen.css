@@ -41,10 +41,16 @@ nav{
 }
 
 .container-nav-sub input{
-	padding: .5rem 2.5rem;
+	padding: .5rem 7rem .5rem 3rem;
 	margin:0px 1rem;
+	border: 1px solid black;
 	border-radius: 2rem;
 }
+
+.container-nav-sub input:focus{
+	outline-color: #ffc30b;
+}
+
 
 .hamburger{
 	background-color: black;
@@ -132,9 +138,39 @@ nav li a:hover, .dropdown:hover .dropdown-btn{
 	display: block;
 }
 
-.btn-create, .btn-connect{
+.nav-end{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10rem;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color:  #E5E5E5;
+	font-size: 1.6rem;
+}
+
+.nav-ul li i {
+	padding-left: 1rem;
+}
+
+.nav-end li a {
+	margin: 0 auto;
+	padding: auto .5rem;
+}
+
+.btn-create{
+	padding: .5rem 2.7rem .5rem 3rem;
+	border-radius: .5rem;
+	border: 1px solid black;
+	font-size: 1.6rem;
+}
+
+.btn-connect{
+	font-size: 1.6rem;
 	padding: .5rem 2rem;
-	border-radius: 2rem;
+	border-radius: .5rem;
+	border: 1px solid black;
+	background-color: #ffc30b;
 }
 
 .btn-create{
@@ -146,10 +182,6 @@ nav li a:hover, .dropdown:hover .dropdown-btn{
 	color: white;
 }
 
-.btn-connect{
-	background-color: #ffc30b;
-}
-
 .btn-connect:hover{
 	color: white;
 }
@@ -158,45 +190,6 @@ nav li a:hover, .dropdown:hover .dropdown-btn{
 
 /*Media Queries*/
 
-
-@media screen and (max-width: 768px){
-	/*.logo{
-		width: 15%;
-		height: 10%;
-	}
-
-
-	.hamburger{
-		display: block;
-	}
-
-	.nav-ul li a{
-		margin-right: 0;
-	}
-
-	.nav-ul{
-		display: none;
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.nav-ul.show{
-		display: flex;
-		background-color: black;
-	}
-
-	.dropdown,.dropdown-btn{
-		background-color: black;
-	}
-
-	.logo{
-		width: 80px;
-	}
-	.nav-ul li a {
-		padding: 1rem;
-	}
-*/
-}
 
 @media screen and (min-width: 768px){
 	input{
@@ -229,16 +222,29 @@ nav li a:hover, .dropdown:hover .dropdown-btn{
 	transform: translate(-50%, -50%);
 }
 
+.section-text h1{
+	color: white;
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 5.5rem;
+}
 .section h1 span{
 	color: #FFC30B;
 
+}
+
+.text-btn-main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
 }
 
 .text-btn1{
 	padding: 1rem 4.5rem;
 	background: #4D55A6;
 	border-radius: 1.5rem;
-	border-color: #4D55A6;
+	border: 1px solid black;
 	color: white;
 	margin-right: 2rem;
 	font-size: 2rem;
@@ -251,7 +257,7 @@ nav li a:hover, .dropdown:hover .dropdown-btn{
 	padding: 1rem 40px;
 	background: transparent;
 	border-radius: 1.5rem;
-	border-color: #4D55A6;
+	border: 1px solid black;
 	color: white;
 	font-size: 2rem;
 }
@@ -259,11 +265,21 @@ nav li a:hover, .dropdown:hover .dropdown-btn{
 	background: #4D55A6;
 }
 
-
 .row{
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+.ph-chats{
+		position: absolute;
+		left: 100%;
+		bottom: 50vh;
+		background-color: #4D55A6;
+		padding: 1rem;
+		border-radius: 5rem;
+		color: white;
+		font-size: 2rem;
+	}
 
 .row:not(:last-child){
 	margin-bottom: 80px;
@@ -413,7 +429,79 @@ big-desktop --greater than 1800px
 
 
 @media (max-width: 37.5em){
+	.container-nav{
+		width: 100vw;
+		display: flex;
+	}
+	.logo{
+		width: 15%;
+		height: 10%;
+		margin: 0;
+	}
 
+	.container-nav-sub input{
+		display: none;
+	}
+
+	.hamburger{
+		display: block;
+	}
+
+	.nav-ul li a{
+		margin-right: 0;
+	}
+
+	.nav-ul{
+		display: none;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav-ul.show{
+		display: flex;
+		background-color: black;
+	}
+
+	.dropdown-menu{
+		position: relative;
+	}
+
+	.dropdown,.dropdown-btn{
+		background-color: black;
+	}
+
+	.logo{
+		width: 80px;
+	}
+
+	.nav-end{
+		margin: 0;
+		border: none;
+		flex-direction: column;
+	}
+
+	.nav-ul li a {
+		padding: 1rem;
+	}
+	.row{
+		display: flex;
+		flex-direction: column;
+		width: 95vw;
+	}
+	.row [class^="col-"]{
+		width: 90vw;
+		margin-bottom: 2rem;
+		margin-left: 1rem;
+	}
+	.rd-head{
+		margin-bottom: 3rem;
+	}
+	.col-1-of-4{
+		margin-bottom: 2rem;
+	}
+	.col-1-of-4 h4 span{
+		color: red;
+	}
 
 }
 
@@ -445,13 +533,14 @@ big-desktop --greater than 1800px
 		background-color: black;
 	}
 
+	.dropdown-menu{
+		position: relative;
+	}
+	
 	.dropdown,.dropdown-btn{
 		background-color: black;
 	}
-
-	.logo{
-		width: 80px;
-	}
+	
 	.nav-ul li a {
 		padding: 1rem;
 	}
@@ -459,6 +548,9 @@ big-desktop --greater than 1800px
 		display: flex;
 		flex-direction: column;
 		width: 95vw;
+	}
+	.ph-chats{
+		visibility: hidden;
 	}
 	.row [class^="col-"]{
 		width: 90vw;
